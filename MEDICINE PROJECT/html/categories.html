@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medicine Categories</title>
+  <link rel="stylesheet" href="../css/categories.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="../index.html" class="home-link">🏠 Back to Home</a>
+  </nav>
+
+  <div class="section">
+    <div class="cards-container">
+      <a href="pain.html" class="card">
+        <img src="../images/pain.jpg" alt="Pain Relief">
+        <h3>🩺 Pain Relief / Analgesics</h3>
+      </a>
+      <a href="cold.html" class="card">
+        <img src="../images/cold.jpg" alt="Cold Cough">
+        <h3>🤧 Cold, Cough & Flu</h3>
+      </a>
+      <a href="fever.html" class="card">
+        <img src="../images/fever.png" alt="Fever">
+        <h3>🤒 Fever / Infections</h3>
+      </a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="cards-container">
+      <a href="allergy.html" class="card">
+        <img src="../images/allergy.png" alt="Allergy">
+        <h3>😷 Allergy / Anti-histamines</h3>
+      </a>
+      <a href="stomach.html" class="card">
+        <img src="../images/stomach.jpg" alt="Stomach">
+        <h3>💊 Stomach / Digestive</h3>
+      </a>
+      <a href="heart.html" class="card">
+        <img src="../images/heart.jpg" alt="Heart">
+        <h3>❤️ Heart / Blood Pressure</h3>
+      </a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="cards-container">
+      <a href="sleep.html" class="card">
+        <img src="../images/sleep.jpg" alt="Mental Health">
+        <h3>🧠 Mental Health / Sleep</h3>
+      </a>
+      <a href="skin.html" class="card">
+        <img src="../images/skin.png" alt="Topical">
+        <h3>🩹 Topical / Skin</h3>
+      </a>
+      <a href="diabetes.html" class="card">
+        <img src="../images/diabetes.jpg" alt="Diabetes">
+        <h3>💉 Diabetes</h3>
+      </a>
+    </div>
+  </div>
+
+  <!-- Scroll Down Arrow -->
+  <div class="scroll-down" onclick="scrollToNextSection()">⬇</div>
+
+  <script>
+    let currentSectionIndex = 0;
+    function scrollToNextSection() {
+      const sections = document.querySelectorAll('.section');
+      currentSectionIndex = (currentSectionIndex + 1) % sections.length;
+      sections[currentSectionIndex].scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

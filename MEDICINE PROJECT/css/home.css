@@ -1,0 +1,158 @@
+/* Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    background-image: url('../images/homebg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  
+  /* Header */
+  header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  /* Intro Section */
+  .intro-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .intro-card h2,
+  .category-card h2 {
+    color: #0077cc;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+  }
+  
+  .intro-card p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .category-card ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .category-card li {
+    padding: 8px 0;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+  }
+  
+  .category-card li:hover {
+    transform: translateX(5px);
+    color: #0077cc;
+    font-weight: bold;
+  }
+  
+  /* CTA Button */
+  .cta {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .intro-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  
+    .btn {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    .intro-card h2,
+    .category-card h2 {
+      font-size: 1.4rem;
+    }
+  
+    .btn {
+      padding: 12px 20px;
+      font-size: 1rem;
+    }
+  }
+  header {
+    position: relative;
+  
+    color: #fff;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .center-gif {
+    height: 500%;
+    width: auto;
+  }
+  
+  
